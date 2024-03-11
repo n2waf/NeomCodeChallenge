@@ -51,9 +51,11 @@
 		ADC5D8AD2B9F272700B898B1 /* NeomCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				ADC5D8AE2B9F272700B898B1 /* NeomCodeChallengeApp.swift */,
-				ADC5D8B02B9F272700B898B1 /* ContentView.swift */,
-				ADC5D8B22B9F272800B898B1 /* Assets.xcassets */,
+				ADC5D8D32B9F306500B898B1 /* Utilities */,
+				ADC5D8C32B9F290C00B898B1 /* App */,
+				ADC5D8C52B9F2B4600B898B1 /* Features */,
+				ADC5D8C72B9F2BB600B898B1 /* Services */,
+				ADC5D8C42B9F292500B898B1 /* Resources */,
 				ADC5D8B42B9F272800B898B1 /* Preview Content */,
 			);
 			path = NeomCodeChallenge;
