@@ -11,6 +11,12 @@
 		ADC5D8B12B9F272700B898B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5D8B02B9F272700B898B1 /* ContentView.swift */; };
 		ADC5D8B32B9F272800B898B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5D8B22B9F272800B898B1 /* Assets.xcassets */; };
 		ADC5D8B62B9F272800B898B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5D8B52B9F272800B898B1 /* Preview Assets.xcassets */; };
+		ADC5D8CB2B9F2BF300B898B1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5D8CA2B9F2BF300B898B1 /* NetworkService.swift */; };
+		ADC5D8CD2B9F2C0300B898B1 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5D8CC2B9F2C0300B898B1 /* Agent.swift */; };
+		ADC5D8D22B9F303600B898B1 /* CoffeeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5D8D12B9F303600B898B1 /* CoffeeListViewModel.swift */; };
+		ADC5D8D52B9F308200B898B1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5D8D42B9F308200B898B1 /* Logger.swift */; };
+		ADC5D8D72B9F313600B898B1 /* Logger+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5D8D62B9F313600B898B1 /* Logger+Network.swift */; };
+		ADC5D8D92B9F324F00B898B1 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5D8D82B9F324F00B898B1 /* Coffee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		ADC5D8B02B9F272700B898B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADC5D8B22B9F272800B898B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADC5D8B52B9F272800B898B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADC5D8CA2B9F2BF300B898B1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		ADC5D8CC2B9F2C0300B898B1 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		ADC5D8D12B9F303600B898B1 /* CoffeeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListViewModel.swift; sourceTree = "<group>"; };
+		ADC5D8D42B9F308200B898B1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		ADC5D8D62B9F313600B898B1 /* Logger+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Network.swift"; sourceTree = "<group>"; };
+		ADC5D8D82B9F324F00B898B1 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,98 @@
 				ADC5D8B52B9F272800B898B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADC5D8C32B9F290C00B898B1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5D8AE2B9F272700B898B1 /* NeomCodeChallengeApp.swift */,
+				ADC5D8B02B9F272700B898B1 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ADC5D8C42B9F292500B898B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5D8B22B9F272800B898B1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ADC5D8C52B9F2B4600B898B1 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5D8C62B9F2BA900B898B1 /* CoffeeList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		ADC5D8C62B9F2BA900B898B1 /* CoffeeList */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5D8CE2B9F301B00B898B1 /* Model */,
+				ADC5D8D02B9F302600B898B1 /* View */,
+				ADC5D8CF2B9F302100B898B1 /* ViewModel */,
+			);
+			path = CoffeeList;
+			sourceTree = "<group>";
+		};
+		ADC5D8C72B9F2BB600B898B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5D8C92B9F2BD800B898B1 /* Networking */,
+				ADC5D8C82B9F2BD300B898B1 /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ADC5D8C82B9F2BD300B898B1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5D8CC2B9F2C0300B898B1 /* Agent.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ADC5D8C92B9F2BD800B898B1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5D8CA2B9F2BF300B898B1 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		ADC5D8CE2B9F301B00B898B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5D8D82B9F324F00B898B1 /* Coffee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADC5D8CF2B9F302100B898B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5D8D12B9F303600B898B1 /* CoffeeListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ADC5D8D02B9F302600B898B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADC5D8D32B9F306500B898B1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5D8D42B9F308200B898B1 /* Logger.swift */,
+				ADC5D8D62B9F313600B898B1 /* Logger+Network.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +243,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC5D8CD2B9F2C0300B898B1 /* Agent.swift in Sources */,
+				ADC5D8D72B9F313600B898B1 /* Logger+Network.swift in Sources */,
+				ADC5D8D52B9F308200B898B1 /* Logger.swift in Sources */,
 				ADC5D8B12B9F272700B898B1 /* ContentView.swift in Sources */,
+				ADC5D8CB2B9F2BF300B898B1 /* NetworkService.swift in Sources */,
 				ADC5D8AF2B9F272700B898B1 /* NeomCodeChallengeApp.swift in Sources */,
+				ADC5D8D22B9F303600B898B1 /* CoffeeListViewModel.swift in Sources */,
+				ADC5D8D92B9F324F00B898B1 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
