@@ -9,11 +9,11 @@ import Foundation
 import Combine
 
 enum NetworkService {
-    private static let base = URL(string: "https://sampleapis.com/")!
+    private static let base = URL(string: "https://api.sampleapis.com")!
     private static let agent = Agent()
     
     static func coffeeList() -> AnyPublisher<[Coffee], Error> {
-        let request = URLComponents(url: base.appendingPathComponent("api-list/coffee"), resolvingAgainstBaseURL: true)?
+        let request = URLComponents(url: base.appendingPathComponent("coffee/hot"), resolvingAgainstBaseURL: true)?
             .request
         return agent.run(request!)
     }
