@@ -11,7 +11,7 @@ import SwiftUI
 struct NeomCodeChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoffeeListView()
         }
     }
 }
